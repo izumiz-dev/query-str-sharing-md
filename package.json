@@ -1,0 +1,59 @@
+{
+  "name": "query-str-sharing-md",
+  "version": "0.1.0",
+  "homepage": "https://izumiz-dev.github.io/query-str-sharing-md",
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@monaco-editor/react": "^4.0.7",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "dexie": "^3.0.3",
+    "github-markdown-css": "^4.0.0",
+    "jssha": "^3.2.0",
+    "markdown-to-jsx": "^7.1.1",
+    "monaco-editor": "0.21.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "typescript": "^4.0.3",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -b gh-page -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/gh-pages": "^3.0.0",
+    "@types/react-copy-to-clipboard": "^5.0.0",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/testing-library__jest-dom": "^5.9.5"
+  }
+}
