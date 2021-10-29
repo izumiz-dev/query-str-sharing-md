@@ -11,7 +11,7 @@ export const digestMessage = async (message: string) => {
 
 export const createShareURL = async (content: string) => {
   const hash = await digestMessage(content);
-  let URL = "https://izumiz-dev.github.io/query-str-sharing-md/shared?content=";
+  let URL = "https://snipets-md.netlify.app/shared?content=";
   URL += encodeURIComponent(content);
   URL += `&hash=${encodeURIComponent(hash)}`;
   return URL;

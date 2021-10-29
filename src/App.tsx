@@ -9,8 +9,6 @@ const useQuery = () => {
   return new URLSearchParams(useLocation().search);
 };
 
-const subRoot = "/query-str-sharing-md";
-
 const App: React.FC = () => {
   const query = useQuery();
   const sharedContents = query.get("content") || "";
@@ -18,10 +16,10 @@ const App: React.FC = () => {
 
   return (
     <Switch>
-      <Route exact path={subRoot}>
+      <Route exact path="/">
         <MDEditor />
       </Route>
-      <Route path={subRoot + "/shared"}>
+      <Route path="/shared">
         <Preview content={sharedContents} hash={hash} />
       </Route>
     </Switch>
